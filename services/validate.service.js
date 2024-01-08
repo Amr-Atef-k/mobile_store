@@ -8,9 +8,7 @@ const validate = (schema)=>{
             }).message
             res.status(400).send(errMsg)
         }
-        next()
-
-        console.log(error)
+        next();
     }
 }
 
